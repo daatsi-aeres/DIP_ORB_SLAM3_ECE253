@@ -1,6 +1,10 @@
 # Adaptive-DIP-ORB-SLAM
 
 **Enhancing ORB-SLAM3 Robustness Through Adaptive Digital Image Processing**
+<p align="center">
+  <img src="ORB_SLAM3/assets/Baseline_video_2.gif" width="800"/>
+</p>
+
 
 ---
 
