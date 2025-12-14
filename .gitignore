@@ -3,6 +3,7 @@
 
 # Unignore all with extensions
 !*.*
+!Dockerfile
 
 # Unignore all dirs
 !*/
