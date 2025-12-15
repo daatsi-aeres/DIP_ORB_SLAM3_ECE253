@@ -44,28 +44,28 @@ PerfLogger::~PerfLogger() {
 }
 
 // Static constant for the source path
-static const std::string TRAJECTORY_SOURCE_PATH = "/home/daatsi-aeres/orbslam3_project/ORB_SLAM3/CameraTrajectory.txt";
+// static const std::string TRAJECTORY_SOURCE_PATH = "/home/daatsi-aeres/orbslam3_project/ORB_SLAM3/CameraTrajectory.txt";
 
-static bool copy_trajectory_file(const std::string &dest_folder) {
-    try {
-        std::filesystem::path src_path(TRAJECTORY_SOURCE_PATH);
-        if (!std::filesystem::exists(src_path)) {
-            cerr << "PerfLogger: Trajectory file not found at source: " << TRAJECTORY_SOURCE_PATH << endl;
-            return false;
-        }
+// static bool copy_trajectory_file(const std::string &dest_folder) {
+//     try {
+//         std::filesystem::path src_path(TRAJECTORY_SOURCE_PATH);
+//         if (!std::filesystem::exists(src_path)) {
+//             cerr << "PerfLogger: Trajectory file not found at source: " << TRAJECTORY_SOURCE_PATH << endl;
+//             return false;
+//         }
 
-        std::filesystem::path dest_path = std::filesystem::path(dest_folder) / "CameraTrajectory.txt";
+//         std::filesystem::path dest_path = std::filesystem::path(dest_folder) / "CameraTrajectory.txt";
 
-        // Use copy_file and overwrite if it exists
-        std::filesystem::copy_file(src_path, dest_path, std::filesystem::copy_options::overwrite_existing);
+//         // Use copy_file and overwrite if it exists
+//         std::filesystem::copy_file(src_path, dest_path, std::filesystem::copy_options::overwrite_existing);
 
-        cout << "[PerfLogger] CameraTrajectory.txt copied to: " << dest_path.string() << endl;
-        return true;
-    } catch (const std::exception &e) {
-        cerr << "PerfLogger: Failed to copy CameraTrajectory.txt: " << e.what() << endl;
-        return false;
-    }
-}
+//         cout << "[PerfLogger] CameraTrajectory.txt copied to: " << dest_path.string() << endl;
+//         return true;
+//     } catch (const std::exception &e) {
+//         cerr << "PerfLogger: Failed to copy CameraTrajectory.txt: " << e.what() << endl;
+//         return false;
+//     }
+// }
 
 void PerfLogger::OpenFiles() {
     lock_guard<mutex> lk(mtx);
