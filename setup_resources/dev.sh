@@ -26,8 +26,8 @@ docker run -it --rm \
     -v /dev/bus/usb:/dev/bus/usb \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
-    -v "$HOST_SRC_DIR":/workspace/ORB_SLAM3 \
-    -w /workspace/ORB_SLAM3 \
+    -v "$HOST_SRC_DIR":/workspace/DIP_ORB_SLAM3_ECE253 \
+    -w /workspace/DIP_ORB_SLAM3_ECE253 \
     $IMAGE_NAME \
     bash
 
