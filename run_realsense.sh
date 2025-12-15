@@ -8,7 +8,7 @@ set -e
 
 # --- Configuration ---
 # Set the root directory for your project
-PROJECT_ROOT="/workspace/ORB_SLAM3"
+PROJECT_ROOT="/workspace/DIP_ORB_SLAM3_ECE253"
 
 # Set the paths to your files
 EXECUTABLE="${PROJECT_ROOT}/Examples/Stereo/stereo_realsense_D435i"
