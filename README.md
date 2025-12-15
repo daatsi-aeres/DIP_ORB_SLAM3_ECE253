@@ -75,7 +75,7 @@ All dependencies are encapsulated in Docker to ensure **reproducibility** across
 
 ```bash
 git clone git@github.com:daatsi-aeres/DIP_ORB_SLAM3_ECE253.git
-cd Adaptive-DIP-ORB-SLAM
+cd DIP_ORB_SLAM3_ECE253
 ```
 
 ---
@@ -85,7 +85,7 @@ cd Adaptive-DIP-ORB-SLAM
 Navigate to the Docker setup directory:
 
 ```bash
-cd ORB_SLAM3/setup_resources
+cd DIP_ORB_SLAM3_ECE253/setup_resources
 docker build -t orbslam3-dev .
 ```
 
@@ -114,7 +114,7 @@ Then launch the container:
 You should now be inside the container at:
 
 ```text
-/workspace/ORB_SLAM3
+/workspace/DIP_ORB_SLAM3_ECE253
 ```
 
 #### What `dev.sh` Does
