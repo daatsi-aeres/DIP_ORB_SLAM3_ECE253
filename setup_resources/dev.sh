@@ -4,7 +4,7 @@ CONTAINER_NAME="orb3"
 IMAGE_NAME="orbslam3-dev"
 
 # Path of ORB_SLAM3 source on host
-HOST_SRC_DIR="$(pwd)/ORB_SLAM3"
+HOST_SRC_DIR="$(pwd)/../../DIP_ORB_SLAM3_ECE253"
 
 # Check source folder exists
 if [ ! -d "$HOST_SRC_DIR" ]; then
