@@ -104,7 +104,7 @@ void PerfLogger::OpenFiles() {
     if (f_map_culling.is_open()) f_map_culling << "kf_id,created,culled,cull_ratio,mean_obs\n";
     else cerr << "PerfLogger: failed open " << path << endl;
 
-    copy_trajectory_file(folder);
+    // copy_trajectory_file(folder);
 
     initialized = true;
 }
