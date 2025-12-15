@@ -74,7 +74,7 @@ All dependencies are encapsulated in Docker to ensure **reproducibility** across
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/daatsi-aeres/Adaptive-DIP-ORB-SLAM.git
+git clone git@github.com:daatsi-aeres/DIP_ORB_SLAM3_ECE253.git
 cd Adaptive-DIP-ORB-SLAM
 ```
 
